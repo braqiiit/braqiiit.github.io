@@ -3,9 +3,13 @@ html{
 }
 body{
     margin: 0%;
-    color:cadetblue;
+    color:#3FADA8;
+    font-family: 'Work Sans', sans-serif;
 }
-h1{
+h1 h2 h3{
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
     margin-left: 20px;
 }
 p{
@@ -46,15 +50,16 @@ p{
 }
 .nav-holder ul li a{
     text-decoration: none;
-    color: seagreen;
+    color: #3FADA8;
     padding: 10px 12px;
     font-size: 17px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 .nav-holder ul li a:hover{
-    background: #ddd;
-    color: black;
+    transform: scale(1.05);
+    background: #3FADA8;
+    color: #ffffff;
 }
 .heading{
     margin-top: 100 px;
@@ -104,10 +109,10 @@ footer img{
     height: auto;
 }
 .copyright{
-    font-family: sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 .sec-heading{
-    font-family: sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 40px;
     padding-top: 70px;
     margin-top: -70px;
@@ -171,13 +176,13 @@ footer img{
     width: auto;
     display: block;
     padding: 1%;
-    font-family: sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: bolder;
     margin: 0px auto;
     text-align: center;
 }
 .pub-list{
-    font-family: sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 .pub-list ul li{
     margin-bottom: 10px;
