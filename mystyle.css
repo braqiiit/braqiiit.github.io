@@ -15,40 +15,39 @@ h1 h2 h3{
 p{
     color: black;
 }
-/* nav{
-    margin: 5pt;
-} */
 .nav-wrapper{
     width: 100%;
-    border-width: 3px;
-    /* border-bottom-style: solid; */
-    position: relative;
+    border-width: 1px;
+    border-bottom-style: solid;
+    position: fixed;
     top: 0;
     z-index: 100;
     height: 70px;
     background: white;
 }
 .nav-wrapper nav{
-    width: 100%;
     background-color: white;
-    position: fixed;
-    overflow: hidden;
     border-width: 1px;
-    border-bottom-style: solid;
 }
 .nav-container{
-    width: 950px;
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin: auto; 
 }
-.nav-holder ul{
-    float: right;
+.nav-img-holder a img{
+    width: 100px;
+    margin-top: 0.75rem;;
+}
+nav ul{
     margin-top: 25px;
 }
-.nav-holder ul li{
+nav ul li{
     display: inline-block;
     list-style-type: none;
 }
-.nav-holder ul li a{
+nav ul li a{
     text-decoration: none;
     color: #3FADA8;
     padding: 10px 12px;
@@ -56,10 +55,45 @@ p{
     font-weight: bold;
     font-family: 'Work Sans', sans-serif;
 }
-.nav-holder ul li a:hover{
+nav ul li a:hover{
     transform: scale(1.05);
     background: #3FADA8;
     color: #ffffff;
+}
+.nav-toggle{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+}
+.open{
+    height: 40vh;
+}
+.hidden{
+    display: none;
+}
+@media all and (max-width: 720px){
+    .nav-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: 250ms height ease-in-out;
+    }
+    nav ul{
+        padding: 0;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    .nav-toggle{
+        display: block;
+    }
 }
 .heading{
     margin-top: 100 px;
@@ -76,8 +110,7 @@ p{
     z-index: 2;
     font-size: 17px;
     font-weight: bold;
-    font-family: 'OPen Sans', sans-serif;
-    /* background-color: #282A35; */
+    font-family: 'Open Sans', sans-serif;
 }
 .top-heading{
     font-size: 80px;
@@ -85,8 +118,7 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
     margin: 10px;
-    padding-top: 70px;
-    margin-top: -70px;
+    padding-top: 90px;
 }
 .box-center{
     margin-left: auto;
@@ -98,7 +130,7 @@ p{
 }
 .research p{
     margin-left: 20%;
-    font-size: 20px;
+    font-size: 16px;
 }
 .people{
     margin: 20px;
@@ -183,6 +215,7 @@ footer img{
 }
 .pub-list{
     font-family: 'Work Sans', sans-serif;
+    color: #000000;
 }
 .pub-list ul li{
     margin-bottom: 10px;
@@ -197,7 +230,6 @@ footer img{
 .address{
     margin-left: 41%;
     margin-right: auto;
-    width: 27%;
     font-size: 17px;
     text-align: left;
 }

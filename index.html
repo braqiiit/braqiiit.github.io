@@ -16,21 +16,24 @@
     </head>
     <body>
         <div class="nav-wrapper">
-            <nav>
-                <div class="nav-container">
-                    <div class="nav-holder">
-                        <a href="#home" title="Home"><img src="braqiiit.png" alt="BraQIIIT Logo"></a>
-                        <ul>
-                            <li><a href="#home" title="Home">Home</a></li>
-                            <li><a href="#about" title="About Us">About Us</a></li>
-                            <li><a href="#research" title="Research">Research</a></li>
-                            <li><a href="#people" title="People">People</a></li>
-                            <li><a href="#publications" title="Publications">Publications</a></li>
-                            <li><a href="#contact" title="Contact Us">Contact Us</a></li>
-                        </ul>
+            <div class="nav-container">
+                <div class="nav-img-holder">
+                    <a href="#home" title="Home"><img src="braqiiit.png" alt="BraQIIIT Logo"></a>
+                    <div class="nav-toggle" id="navToggle">
+                        <img class="navIcon" id="hb-menu" src="hb-menu.svg" alt="Hamburger Menu">
+                        <img class="navIcon hidden" src="cross.svg" alt="Close Menu">
                     </div>
                 </div>
-            </nav>
+                <nav>
+                    <ul>
+                        <li><a href="#home" title="Home">Home</a></li>
+                        <li><a href="#research" title="Research">Research</a></li>
+                        <li><a href="#people" title="People">People</a></li>
+                        <li><a href="#publications" title="Publications">Publications</a></li>
+                        <li><a href="#contact" title="Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="home" id="home">
             <div>
@@ -146,12 +149,16 @@
         <hr width="85%">
         <div class="sec-container box-center">
             <div class="publications" id="publications">
-                <h2 class="box-center center sec-heading">Publications</h2>
+                <h2 class="box-center center sec-heading">Recent Publications</h2>
                 <div class="pub-list">
                     <ul>
-                        <li>S. Dawar, D. Bera, V. Goyal. "SMIM framework to generalize high-utility itemset mining". ADMA 2021</li>
-                        <li>S. Dawar, D. Bera, V. Goyal. "SMIM framework to generalize high-utility itemset mining". ADMA 2021</li>
-                        <li>S. Dawar, D. Bera, V. Goyal. "SMIM framework to generalize high-utility itemset mining". ADMA 2021</li>
+                        <li>S. Dawar, D. Bera, V. Goyal. SMIM framework to generalize high-utility itemset mining. ADMA 2021.</li>
+                        <li>D. Bera, R. Pratap, B.D. Verma, B. Sen, & T. Chakraborty. QUINT: Node embedding using network hashing. IEEE Transactions on Knowledge and Data Engineering (2021).</li>
+                        <li>D. Bera, and Tharrmashastha SAPV. Space efficient quantum algorithms for mode, min-entropy and k-distinctness. arXiv preprint. <a href="https://arxiv.org/abs/2103.09033">arXiv:2103.09033</a>(2021).</li>
+                        <li>D. Bera and Tharrmashastha SAPV. Quantum and Randomised Algorithms for Non-linearity Estimation. ACM Transactions on Quantum Computing (2021).</li>
+                        <li>D. Bera and S. Chatterjee. Applying the Quantum Alternating OPerator Ansatz to the Graph Matching Problem. AQIS 2020.</li>
+                        <li>Jolly, B. L. Kaur, L. Jain, D. Bera, and T. Chakraborty. Unsupervised anomaly detection in journal-level citation networks. In Proceedings of the ACM/IEEE Joint Conference on Digital Libraries (2020).</li>
+                        <li>D. Bera. Maximal Labeled-Cliques for Structural-Functional Communities. In International Conference on Complex Networks and Their Applications (2020).</li>
                     </ul>
                 </div>
             </div>
@@ -189,5 +196,6 @@
             </div>
             <br>
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>
