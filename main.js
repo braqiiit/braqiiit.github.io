@@ -2,9 +2,10 @@ const navToggle = document.querySelector('#navToggle');
 const nav = document.querySelector('nav');
 const navIcon = document.querySelectorAll('.navIcon')
 const hbmenu = document.querySelector('#hb-menu')
+const navItems = document.querySelectorAll("nav-item")
 
 navToggle.addEventListener(
-    'click', () => {
+    "click", () => {
         nav.classList.toggle('open');
         navIcon.forEach(icon => {
             icon.classList.toggle('hidden');
@@ -12,6 +13,16 @@ navToggle.addEventListener(
         )
     }
 )
+
+nav.addEventListener("mouseup", function(event){
+    if(event.target && document.body.clientWidth <= 720){
+        nav.classList.toggle('open');
+        navIcon.forEach(icon => {
+            icon.classList.toggle('hidden');
+        }
+        )
+    }
+})
 
 window.addEventListener("resize", () => {
     if(document.body.clientWidth > 720){
