@@ -2032,9 +2032,14 @@ input, select, textarea {
 			}
 
 		.wrapper.style3 {
-			background-color: #f4f4f4;
+			background-color: #f8f8f8;
 			text-shadow: 1px 1px 0px #fff;
 		}
+
+		.wrapper.style5 {
+			background-color: #f3f3f3;
+			text-shadow: 1px 1px 0px #fff;
+		}		
 
 		.wrapper.style4 {
 			background-color: #303030;
