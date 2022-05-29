@@ -2066,6 +2066,53 @@ input, select, textarea {
 					background: #252525;
 				}
 
+/* Resources */
+
+	#resources {
+		flex-direction: column;	
+	}
+
+	#resources ul li {
+		padding-bottom: 0.6em;
+		text-align: left;
+	}
+
+	#resources ul li a {
+		color: dodgerblue;
+		text-decoration: none;
+	}
+
+	#resources .col-3 {
+		border-right: thin solid #282828;
+	}
+
+	#resources .no-sep {
+		border-right: none;
+	}
+
+	@media screen and (max-width: 1280px) {
+		#resources .col-3 {
+			padding: 25px 12px 0 12px;
+		}
+	}
+
+	@media screen and (max-width: 980px) {
+		#resources .col-6-medium {
+			padding: 25px 12px 0 12px;
+		}
+
+		#resources .no-sep-medium {
+			border-right: none;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		#resources .col-12-small {
+			padding: 15px 7px 0 7px;
+			border-right: none;
+		}
+	}
+
 /* Nav */
 
 	#nav {
@@ -2092,11 +2139,11 @@ input, select, textarea {
 			padding-left: 0;
 		}
 
-		#nav a {
-			-moz-transition: background-color .2s ease-in-out;
-			-webkit-transition: background-color .2s ease-in-out;
-			-ms-transition: background-color .2s ease-in-out;
-			transition: background-color .2s ease-in-out;
+		#nav ul li a {
+			-moz-transition: background-color 0.2s ease-in-out;
+			-webkit-transition: background-color 0.2s ease-in-out;
+			-ms-transition: background-color 0.2s ease-in-out;
+			transition: background-color 0.2s ease-in-out;
 			position: relative;
 			display: block;
 			color: #fff;
@@ -2130,6 +2177,10 @@ input, select, textarea {
 					border-right: solid 0.75em transparent;
 					border-top: solid 0.6em #282828;
 				}
+		
+		.toggle-button {
+			display: none;
+		}
 
 /* Articles */
 
@@ -2424,9 +2475,25 @@ input, select, textarea {
 			#nav {
 				height: 44px;
 				line-height: 44px;
+				flex-direction: column;
 			}
 
-				#nav a {
+				#nav ul {
+					width: 25%;
+					flex-direction: column;
+					position: fixed;
+					height: 100vh;
+					background: #006599;
+					text-align: center;
+					left: 0%;
+					transition: top 1s ease;
+				}
+
+				#nav ul li {
+					display: block;
+				}
+
+				#nav ul li a {
 					padding: 0 0.75em;
 					height: inherit;
 					line-height: inherit;
@@ -2436,6 +2503,37 @@ input, select, textarea {
 					#nav a:hover {
 						background-color: transparent;
 					}
+
+			a:hover, a.active {
+				background: none;
+				color: #10BEF1;
+			}
+			
+			.toggle-button {
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				top : .75rem;
+				right: 1rem;
+				width: 30px;
+				height: 21px;
+			}
+
+				.toggle-button .bar {
+					height: 3px;
+					width: 100%;
+					background-color: white;
+					border-radius: 10px;
+				}
+			
+			.navbar-links {
+				display: none;
+			}
+			
+			.navbar-links.active {
+				display: flex;
+			}
 
 		/* Articles */
 

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>BraQIIITD - The Quantum Lab at IIIT-D</title>
+		<title>BraQIIIT - The Quantum Lab at IIIT-Delhi</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -11,13 +11,23 @@
 
 		<!-- Nav -->
 			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Home</a></li>
-					<li><a href="#team">Team</a></li>
-					<li><a href="#publications">Publications</a></li>
-					<li><a href="#resources">Resources</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
+				<div class="toggle">
+					<a href="#" class="toggle-button">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</a>
+				</div>
+				<div class="navbar-links">
+					<ul class="container">
+						<li><a href="#top">Home</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#publications">Publications</a></li>
+						<!-- <li><a href="events.html">Events</a></li> -->
+						<li><a href="#resources">Resources</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
 			</nav>
 
 		<!-- Home -->
@@ -31,8 +41,8 @@
 							<header>
 								<h1>BraQIIIT</h1>
 							</header>
-							<p>The Quantum Lab at IIIT-D.</p>
-							<p>BraQIIIT is a research group led by Dr. Debajyoti Bera at Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi). Broad research interests of this group include quantum query complexity, quantum circuit complexity, and quantum algorithms for cryptography, machine learning and optimization.</p>
+							<p>The Quantum Lab at IIIT-Delhi.</p>
+							<p>BraQIIIT is a research group led by Dr. Debajyoti Bera at the Computer Science department of Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi). Broad research interests of this group include quantum query complexity, quantum circuit complexity, and quantum algorithms for cryptography, machine learning and optimization.</p>
 						</div>
 					</div>
 				</div>
@@ -59,13 +69,15 @@
 							<section class="box style1">
 								<span class="image fit"><a href="http://chatsagnik.com/"><img src="images/sagnik.png" alt="" /></a></span>
 								<h3>Sagnik Chatterjee</h3>
+								<h4>3<sup>rd</sup> Year</h4>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="image fit"><a href="https://sites.google.com/iiitd.ac.in/
 									tharrma"><img src="images/tharrma.jpg" alt="" /></a></span>
-								<h3>Tharrmashastha SAPV</h3>
+								<h3>Tharrmashastha SAPV </h3>
+								<h4>3<sup>rd</sup> Year</h4>
 							</section>
 						</div>
 					</div>
@@ -99,8 +111,97 @@
 				<header>
 					<h2>Useful Resources</h2>
 				</header>
-					<embed class="embed" src="images/resources_for_qc.pdf" width="1024px" height="500px"
-					type="application/pdf" style="max-width: 95%;">
+				<div class="row aln-left">
+					<div class="col-6 col-6-medium col-12-small">
+						<section>
+							<h3>Online Resources</h3>
+							<span>
+								<ul>
+									<li><a href="https://qiskit.org/textbook/">Qiskit Textbook</a> <br> An interactive online textbook for an introduction to quantum computing and programming.</li>
+									<li>
+										<a href="https://quantum.country/">Quantum Country </a> <br>
+										A very descriptive but limited introduction to the basics of quantum computing.
+									</li>
+									<li>
+										<a href="https://quantumalgorithmzoo.org/">Quantum Algorithm Zoo</a> <br>
+										An assortment of important quantum algorithms, all in one place.
+									</li>
+								</ul>
+							</span>
+						</section>
+					</div>
+					<div class="col-6 col-6-medium col-12-small no-sep-medium">
+						<section>
+							<h3>Text Books</h3>
+							<span>
+								<ul>
+									<li>
+										<a href="https://doi.org/10.1017/CBO9780511813887">Quantum Computing for Computer Scientists by Yanofsky and Mannucci</a>
+										<br>
+										Basic introduction to QC from a more computer science perspective.
+									</li>
+									<li>
+										<a href="http://www.thomaswong.net/introduction-to-classical-and-quantum-computing-1e2p.pdf">Introduction to Classical and Quantum Computing by Thomas Wong</a>
+										<br>
+										Focuses on the basics of QC, tools like linear algebra and how to connect them.
+									</li>
+									<li>
+										<a href="http://csis.pace.edu/~ctappert/cs837-19spring/QC-textbook.pdf">Quantum Computation and Quantum Information by Neilson and Chuang</a>
+										<br>
+										The Bible of Quantum Computing. Needs knowledge of some linear algebra.
+									</li>
+									<li>
+										<a href="http://ursula.chem.yale.edu/~batista/classes/v572/Mosca.pdf">An Introduction to Quantum Computing by Kaye, Laflamme and Mosca (Advanced)</a>
+										<br>
+										Expected to be read after some familiarity with the basics of QC and linear algebra.
+									</li>
+								</ul>
+							</span>
+						</section>
+					</div>
+					<div class="col-6 col-6-medium col-12-small">
+						<section>
+							<h3>Video Resources</h3>
+							<span>
+								<ul>
+									<li>
+										<a href="https://www.youtube.com/c/qiskit">Qiskit YouTube channel</a>
+									</li>
+									<li>
+										<a href="https://youtube.com/playlist?list=PLm3J0oaFux3YL5qLskC6xQ24JpMwOAeJz">Ryan O'Donnell's Video Lectures on Quantum Computing</a>
+									</li>
+									<li>
+										<a href="https://www.youtube.com/playlist?list=PLmRxgFnCIhaMgvot-Xuym_hn69lmzIokg">Peter Wittek's Video Lectures on Quantum Machine Learning</a>
+									</li>
+									<li>
+										<a href="https://youtube.com/playlist?list=PLZGjbQcY0aI4PB63hH_RnfnJSfNK1OojC">Sevag Gharibian's Video Lectures on Introduction to Quantum Computing (Advanced)</a>
+									</li>
+								</ul>
+							</span>
+						</section>
+					</div>
+					<div class="col-6 col-6-medium col-12-small no-sep no-sep-medium">
+						<section>
+							<h3>Some Fun Reads</h3>
+							<span>
+								<ul>
+									<li>
+										<a href="https://blog.qutech.nl/">Bits of Quantum</a>
+									</li>
+									<li>
+										<a href="https://decodoku.medium.com/">Decodoku</a>
+									</li>
+									<li>
+										<a href="https://scottaaronson.blog/">Shtetl Optimized</a>
+									</li>
+									<li>
+										<a href="https://www.mustythoughts.com/">Musty Thoughts</a>
+									</li>
+								</ul>
+							</span>
+						</section>
+					</div>
+				</div>
 			</div>
 		</article>
 
@@ -166,7 +267,7 @@
 					</div>
 					<footer>
 						<ul id="copyright">
-							<li>Copyright &copy; BraQIIIT 2022. All rights reserved.</li>
+							<li>Copyright &copy; IIIT-Delhi 2022. All rights reserved.</li>
 						</ul>
 					</footer>
 				</div>
