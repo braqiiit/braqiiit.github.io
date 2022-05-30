@@ -2575,3 +2575,83 @@ input, select, textarea {
 					}
 
 	}
+
+/* BSoc Project */
+#bsoctop {
+	text-align: left;
+}
+
+	#bsoctop h1 {
+		margin-top: 0.35em;
+		font-size: 3em;
+	}
+
+	#bsoctop p {
+		font-size: 1.5em;
+		line-height: 1.75em;
+	}
+
+		#bsoctop p a {
+			color: inherit;
+		}
+
+	#bsocmentors h3 {
+		font-size: 2em;
+		font-weight: 500;
+		color: #3FADA8;
+	}
+
+	#bsocmentors .mentors ul {
+		padding-top: 10% ;
+	}
+	
+	#bsocmentors .mentors ul li {
+		text-align: left;
+		font-size: 1.3em;
+		/* line-height: 1.75em; */
+		padding-left: 20%;
+		padding-bottom: 5%;
+		list-style-type: none;
+	}
+
+	#bsocmentors .projectslist {
+		padding-left: 10%	;
+	}
+
+		#bsocmentors ul li {
+			text-align: left;
+			font-size: 1.2em;
+			line-height: 1.75em;
+			padding: 0.3em;
+		}
+
+
+	#bsocproject h3 {
+		font-size: 2em;
+		font-weight: 500;
+		color: #3FADA8;
+	}
+
+	#bsocproject table {
+		width: 80%;
+		margin: auto;
+	}
+
+	#bsocproject table td {
+		border: 1px solid #383838;
+		border-radius: 20px;
+		padding: 15px;
+		font-size: 1.2em;
+		line-height: 1.75em;
+	}
+
+	#bsocproject ul li {
+		text-align: left;
+		font-size: 1.2em;
+		line-height: 1.75em;
+		padding: 0.3em;
+	}
+
+	#bsocproject .prereqlist {
+		padding-left: 10%	;
+	}
