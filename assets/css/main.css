@@ -2601,15 +2601,18 @@ input, select, textarea {
 		color: #3FADA8;
 	}
 
+	#bsocmentors h4 {
+		font-weight: 500;
+		color: #3FADA8;
+	}
+
 	#bsocmentors .mentors ul {
 		padding-top: 10% ;
 	}
 	
 	#bsocmentors .mentors ul li {
-		text-align: left;
+		text-align: center;
 		font-size: 1.3em;
-		/* line-height: 1.75em; */
-		padding-left: 20%;
 		padding-bottom: 5%;
 		list-style-type: none;
 	}
