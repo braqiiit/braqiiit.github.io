@@ -237,6 +237,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: calc(100% - 50px);
 		width: 1200px;
+		/* width: 1025px; */
 	}
 
 		.container.medium {
@@ -1786,6 +1787,13 @@ input, select, textarea {
 		ul.papers li {
 			margin-bottom: 0.5em;
 		}
+	
+	ul.students {
+		text-align: left;
+		font-size: larger;
+		margin-bottom: 3ex;
+		padding-left: 3cm;
+	}
 
 /* Social */
 
@@ -2065,6 +2073,53 @@ input, select, textarea {
 				.wrapper.style4 form textarea:focus {
 					background: #252525;
 				}
+
+/* Projects */
+
+	#projects {
+		flex-direction: column;	
+	}
+
+	#projects ul li {
+		padding-bottom: 0.6em;
+		text-align: left;
+	}
+
+	#projects ul li a {
+		color: dodgerblue;
+		text-decoration: none;
+	}
+
+	#projects .col-3 {
+		border-right: thin solid #282828;
+	}
+
+	#projects .no-sep {
+		border-right: none;
+	}
+
+	@media screen and (max-width: 1280px) {
+		#projects .col-3 {
+			padding: 25px 12px 0 12px;
+		}
+	}
+
+	@media screen and (max-width: 980px) {
+		#projects .col-6-medium {
+			padding: 25px 12px 0 12px;
+		}
+
+		#projects .no-sep-medium {
+			border-right: none;
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		#projects .col-12-small {
+			padding: 15px 7px 0 7px;
+			border-right: none;
+		}
+	}
 
 /* Resources */
 
