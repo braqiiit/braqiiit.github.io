@@ -195,8 +195,8 @@ textarea,
 select {
   font-family: "Open Sans", sans-serif;
   line-height: 1.85em;
-  color: #888;
-  font-weight: 300;
+  color: #290404;
+  font-weight: 500;
   font-size: 13pt;
 }
 
@@ -205,12 +205,13 @@ a {
   -webkit-transition: color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
-  color: #43b3e0;
-  text-decoration: underline;
+  font-weight: 500;
+  color: #3808e4;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #43bff0 !important;
+  color: #07b1f5 !important;
 }
 
 a img {
