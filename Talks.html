@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <title>BraQIIIT Invited Talks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* table {
+      
+      border-collapse: collapse;
+    } */
+
+    table {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      margin-top: 10em;
+      width: 80%;
+      margin: 20px auto;
+      table-layout: fixed;
+    }
+
+    table caption {
+      font-size: 1.5em;
+      margin: .5em 0 .75em;
+    }
+
+    table tr {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      padding: .35em;
+    }
+
+    table th,
+    table td {
+      padding: .625em;
+      text-align: center;
+    }
+
+    table td {
+      border-bottom: 2px solid #3fada8;
+    }
+
+    table th {
+      font-size: 1em;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 600px) {
+      table {
+        border: 0;
+      }
+
+      table caption {
+        font-size: 1.3em;
+      }
+
+      table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+      }
+
+      table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+      }
+
+      table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+      }
+
+      table td::before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      table td:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    /*Setting the width of column 3.*/
+
+    /*Setting the table width is important!*/
+  </style>
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="toggle">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+    </div>
+    <div class="navbar-links row aln-center">
+      <div>
+        <ul class="container">
+          <li><a href="index.html">BraQIIIT</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <div>
+    <table class="fixed">
+      <caption>BraQIIIT Invited Talks</caption>
+      <thead>
+        <tr>
+          <th scope="col">Speaker</th>
+          <th scope="col">Title</th>
+          <th scope="col">Date</th>
+          <th scope="col">Resources</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Speaker"> Armando Angrisani (EPFL)</td>
+          <td data-label="Title">A Unifying Framework for Differentially Private Quantum Algorithms</td>
+          <td data-label="Date">March 1, 2024</td>
+          <td data-label="Resources"> <a href="https://arxiv.org/abs/2307.04733" target="_blank"
+              rel="noopener noreferrer">Paper</a> </td>
+        </tr>
+        <tr>
+          <td data-label="Speaker">Gabriel Matos (Quantinuum)</td>
+          <td data-label="Title">Characterization of variational quantum algorithms using free fermions</td>
+          <td data-label="Date">TBA</td>
+          <td data-label="Resources"> <a href="https://quantum-journal.org/papers/q-2023-03-30-966/" target="_blank"
+              rel="noopener noreferrer">Paper</a> </td>
+        </tr>
+        <tr>
+          <td data-label="Speaker">Preetham Mohan (University of Michigan)</td>
+          <td data-label="Title">Quantum Learning Theory Beyond Batch Binary Classification</td>
+          <td data-label="Date">TBA</td>
+          <td data-label="Resources"> <a href="https://arxiv.org/abs/2302.07409" target="_blank"
+              rel="noopener noreferrer">Paper</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+
+</html>
