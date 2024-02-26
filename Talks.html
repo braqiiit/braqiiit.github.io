@@ -9,12 +9,52 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      min-height: 100vh;
+      margin: 0;
     }
 
     h1 {
       font-size: 24px;
       text-align: center;
       margin-top: 20px;
+    }
+
+    .navbar {
+      /* overflow: hidden; */
+      background-color: #333;
+      position: fixed;
+      /* margin-bottom: 100px; */
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      max-height: 10vh;
+      /* Ensure it stays above other content */
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .navbar a.logo img {
+      height: 60px;
+    }
+
+    .navbar a.logo-right {
+      float: right;
+    }
+
+    .navbar a.logo-right img {
+      max-width: 140px;
     }
 
     /* table {
@@ -62,7 +102,40 @@
       text-transform: uppercase;
     }
 
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 0.5em;
+      text-align: center;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      max-height: 10vh;
+    }
+
+    footer a {
+      color: #3fada8;
+      text-decoration: none;
+    }
+
+    .centered-div {
+      width: 1200px;
+      /* Adjust width as needed */
+      margin: 0 auto;
+      /* This centers the div horizontally */
+      /* background-color: rgb(16, 16, 17); */
+      color: #3fada8;
+      padding: 20px;
+    }
+
+    /* Media query for smaller screens */
+
     @media screen and (max-width: 600px) {
+      footer {
+        font-size: 14px;
+      }
+
       table {
         border: 0;
       }
@@ -118,29 +191,21 @@
 </head>
 
 <body>
-  <nav id="nav">
-    <div class="toggle">
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-    </div>
-    <div class="navbar-links row aln-center">
-      <div>
-        <ul class="container">
-          <li><a href="index.html">BraQIIIT</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </div>
+  <div class="navbar">
+    <a href="#" class="logo"><img src="images/iiitd.png" alt="Left Logo"></a>
 
-    </div>
-  </nav>
+    <a href="#" class="logo-right"><img src="images/cqt.png" alt="Right Logo"></a>
+  </div>
 
-
+  <div class="centered-div">Welcome to Talks on Quantum Computing organized by the BraQIIIT lab at IIIT-Delhi. Our
+    speakers, a group of talented and dynamic young researchers, will share their latest findings related to the field
+    of quantum computing, engineering, and information.</div>
+  <div class="centered-div">
+    <p><span style="font-weight: 600;font-size: larger;">Google Meet Code</span>: hkk-tias-vbe</p>
+  </div>
   <div>
     <table class="fixed">
-      <caption>BraQIIIT Invited Talks</caption>
+      <caption>TQC Talks</caption>
       <thead>
         <tr>
           <th scope="col">Speaker</th>
@@ -153,28 +218,37 @@
         <tr>
           <td data-label="Speaker"> Armando Angrisani (EPFL)</td>
           <td data-label="Title">A Unifying Framework for Differentially Private Quantum Algorithms</td>
-          <td data-label="Date">March 1, 2024</td>
+          <td data-label="Date">March 1, 2024 <br> 8:00 PM IST</td>
           <td data-label="Resources"> <a href="https://arxiv.org/abs/2307.04733" target="_blank"
-              rel="noopener noreferrer">Paper</a> </td>
+              rel="noopener noreferrer">Paper</a>
+          </td>
         </tr>
         <tr>
           <td data-label="Speaker">Gabriel Matos (Quantinuum)</td>
           <td data-label="Title">Characterization of variational quantum algorithms using free fermions</td>
-          <td data-label="Date">TBA</td>
+          <td data-label="Date">March 8, 2024 <br> Time TBA</td>
           <td data-label="Resources"> <a href="https://quantum-journal.org/papers/q-2023-03-30-966/" target="_blank"
               rel="noopener noreferrer">Paper</a> </td>
         </tr>
         <tr>
           <td data-label="Speaker">Preetham Mohan (University of Michigan)</td>
           <td data-label="Title">Quantum Learning Theory Beyond Batch Binary Classification</td>
-          <td data-label="Date">TBA</td>
+
+          <td data-label="Date">March 15, 2024 <br> Time TBA</td>
+
           <td data-label="Resources"> <a href="https://arxiv.org/abs/2302.07409" target="_blank"
               rel="noopener noreferrer">Paper</a></td>
         </tr>
       </tbody>
     </table>
   </div>
-
+  <div class="centered-div">
+    <p><span style="font-weight: 600;font-size: larger;">Google Meet Code</span>: hkk-tias-vbe</p>
+  </div>
+  <div style="min-height: 20vh;"></div>
 </body>
+<footer>
+  <p>&copy; 2024 <a href="index.html#contact" target="_blank" rel="noopener noreferrer">BraQIIIT</a>.</p>
+</footer>
 
 </html>
