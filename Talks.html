@@ -120,13 +120,14 @@
     }
 
     .centered-div {
-      width: 1200px;
+      max-width: fit-content;
       /* Adjust width as needed */
       margin: 0 auto;
       /* This centers the div horizontally */
       /* background-color: rgb(16, 16, 17); */
       color: #3fada8;
-      padding: 20px;
+      padding: 10em;
+      padding-bottom: 0;
     }
 
     /* Media query for smaller screens */
@@ -182,6 +183,10 @@
       table td:last-child {
         border-bottom: 0;
       }
+
+      .centered-div {
+        max-width: fit-content;
+      }
     }
 
     /*Setting the width of column 3.*/
@@ -196,15 +201,15 @@
 
     <a href="#" class="logo-right"><img src="images/cqt.png" alt="Right Logo"></a>
   </div>
-
-  <div class="centered-div" style="padding-top: 5em;">Welcome to Talks on Quantum Computing organized by the BraQIIIT
+  <div style="min-height: 5vh;"></div>
+  <div class="centered-div" style="padding-top: 2em;">Welcome to Talks on Quantum Computing organized by the BraQIIIT
     lab
     at IIIT-Delhi. Our
     speakers, a group of talented and dynamic young researchers, will share their latest findings related to the field
     of quantum computing, engineering, and information.</div>
-  <div class="centered-div">
+  <!-- <div class="centered-div">
     <p><span style="font-weight: 600;font-size: larger;">Google Meet Code</span>: hkk-tias-vbe</p>
-  </div>
+  </div> -->
   <div>
     <table class="fixed">
       <caption>TQC Talks</caption>
@@ -222,7 +227,8 @@
           <td data-label="Title">A Unifying Framework for Differentially Private Quantum Algorithms</td>
           <td data-label="Date">March 1, 2024 <br> 8:00 PM IST</td>
           <td data-label="Resources"> <a href="https://arxiv.org/abs/2307.04733" target="_blank"
-              rel="noopener noreferrer">Paper</a>
+              rel="noopener noreferrer">Paper</a><br><span style="font-weight: 600">Google Meet
+              Code</span>: hkk-tias-vbe
           </td>
         </tr>
         <tr>
@@ -263,9 +269,9 @@
       </tbody>
     </table>
   </div>
-  <div class="centered-div">
+  <!-- <div class="centered-div">
     <p><span style="font-weight: 600;font-size: larger;">Google Meet Code</span>: hkk-tias-vbe</p>
-  </div>
+  </div> -->
   <div style="min-height: 20vh;"></div>
 </body>
 <footer>
