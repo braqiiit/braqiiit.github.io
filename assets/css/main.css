@@ -290,8 +290,8 @@ h2 {
   letter-spacing: -0.015em;
 }
 h2.students.left {
-  text-align: right;
-  padding-right: 10%;
+  text-align: center;
+  /* padding-right: 10%; */
 }
 
 h2.students.right {
